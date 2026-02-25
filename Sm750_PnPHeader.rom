@@ -1,0 +1,17 @@
+PnP Installation Structure: 0x000F0C10
+24 50 6E 50 10 21 00 00 CF 00 00 00 00 16 BE 00	$PnP.!..........
+F0 3E BE 00 00 0F 00 00 00 00 00 00 F0 00 00 0F	.>..............
+00                                             	.               
+  Signature	$PnP
+  Revision	0x10
+  Length	0x21 (33)
+  Control Flags	0x0000
+  CheckSum	0xCF
+  Event Flag Address	0x00000000
+  Real Mode Entry Offset	0xBE16
+  Real Mode Entry Segment	0xF000
+  Protect Mode Entry Offset	0xBE3E
+  Protect Mode Entry Base	0x000F0000
+  OEM Device ID	0x00000000
+  Real Mode Data Segment	0xF000
+  Protect Mode Data Base	0x000F0000

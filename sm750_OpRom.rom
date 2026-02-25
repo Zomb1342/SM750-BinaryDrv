@@ -1,0 +1,46 @@
+PnP Installation Structure: 0x000F0C10
+24 50 6E 50 10 21 00 00 CF 00 00 00 00 16 BE 00	$PnP.!..........
+F0 3E BE 00 00 0F 00 00 00 00 00 00 F0 00 00 0F	.>..............
+00                                             	.               
+  Signature	$PnP
+  Revision	0x10
+  Length	0x21 (33)
+  Control Flags	0x0000
+  CheckSum	0xCF
+  Event Flag Address	0x00000000
+  Real Mode Entry Offset	0xBE16
+  Real Mode Entry Segment	0xF000
+  Protect Mode Entry Offset	0xBE3E
+  Protect Mode Entry Base	0x000F0000
+  OEM Device ID	0x00000000
+  Real Mode Data Segment	0xF000
+  Protect Mode Data Base	0x000F0000
+
+Option ROM Header: 0x000C0000
+55 AA 71 EB 4B 37 34 30 30 E9 4C 19 77 CC 56 49	U.q.K7400.L.w.VI
+44 45 4F 20 0D 00 00 00 A0 01 2E 19            	DEO ........    
+  Signature	0xAA55
+  Length	0x71 (57856 bytes)
+  Initialization entry	0x34374BEB
+  Reserved	0x30 0x30 0xE9 0x4C 0x19 0x77 0xCC 0x56 0x49 0x44 
+  Reserved	0x45 0x4F 0x20 0x0D 0x00 0x00 0x00 
+  PCI Data Offset	0x01A0
+  Expansion Header Offset	0x192E
+
+PCI Data Structure: 0x000C01A0
+50 43 49 52 DE 10 01 1D 00 00 18 00 00 00 00 03	PCIR............
+71 00 01 00 00 00 00 00                        	q.......        
+  Signature	PCIR
+  Vendor ID	0x10DE - nVidia Corporation
+  Device ID	0x1D01
+  Product Data	0x0000
+  Structure Length	0x0018
+  Structure Revision	0x00
+  Class Code	0x00 0x00 0x03
+  Image Length	0x0071
+  Revision Level	0x0001
+  Code Type	0x00
+  Indicator	0x00
+  Reserved	0x0000
+
+
