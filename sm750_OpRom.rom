@@ -1,0 +1,46 @@
+PnP Installation Structure: 0x000F0C10
+24 50 6E 50 10 21 00 00 CF 00 00 00 00 16 BE 00	$PnP.!..........
+F0 3E BE 00 00 0F 00 00 00 00 00 00 F0 00 00 0F	.>..............
+00                                             	.               
+  Signature	$PnP
+  Revision	0x10
+  Length	0x21 (33)
+  Control Flags	0x0000
+  CheckSum	0xCF
+  Event Flag Address	0x00000000
+  Real Mode Entry Offset	0xBE16
+  Real Mode Entry Segment	0xF000
+  Protect Mode Entry Offset	0xBE3E
+  Protect Mode Entry Base	0x000F0000
+  OEM Device ID	0x00000000
+  Real Mode Data Segment	0xF000
+  Protect Mode Data Base	0x000F0000
+
+Option ROM Header: 0x000C0000
+55 AA 60 E9 50 12 00 00 00 00 D9 00 6C 00 00 00	U.`.P.......l...
+00 00 00 00 00 00 00 00 1C 00 00 C0            	............    
+  Signature	0xAA55
+  Length	0x60 (49152 bytes)
+  Initialization entry	0x001250E9
+  Reserved	0x00 0x00 0x00 0xD9 0x00 0x6C 0x00 0x00 0x00 0x00 
+  Reserved	0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+  PCI Data Offset	0x001C
+  Expansion Header Offset	0xC000
+
+PCI Data Structure: 0x000C001C
+50 43 49 52 6F 12 50 07 00 00 18 00 00 00 00 03	PCIRo.P.........
+60 00 00 00 00 80 00 00                        	`.......        
+  Signature	PCIR
+  Vendor ID	0x126F - Silicon Motion
+  Device ID	0x0750
+  Product Data	0x0000
+  Structure Length	0x0018
+  Structure Revision	0x00
+  Class Code	0x00 0x00 0x03
+  Image Length	0x0060
+  Revision Level	0x0000
+  Code Type	0x00
+  Indicator	0x80
+  Reserved	0x0000
+
+
